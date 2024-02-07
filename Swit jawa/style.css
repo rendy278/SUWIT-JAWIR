@@ -1,0 +1,215 @@
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Suwit Jawa 2.0 */
+
+body {
+  background: #ebebeb;
+  font-family: arial;
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #74fcf9;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333,
+    -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333,
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding: 3rem 7rem;
+  position: relative;
+  display: block;
+}
+
+.area-game {
+  width: 560px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  gap: 5.1rem;
+  margin: auto;
+  background-color: lightblue;
+  background: linear-gradient(
+    to bottom,
+    rgba(179, 220, 233, 1) 0%,
+    rgba(41, 184, 229, 1) 100%
+  );
+  position: relative;
+  padding-top: 40px;
+  box-sizing: border-box;
+  border-radius: 40px 40px 0 0;
+}
+
+.area-player {
+  width: 560px;
+  height: 250px;
+  margin: 5px auto;
+  background-color: lightgreen;
+  background: linear-gradient(
+    to bottom,
+    rgba(210, 255, 14, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  position: relative;
+  border-radius: 0 0 40px 40px;
+}
+
+.info {
+  width: 150px;
+  height: 60px;
+  border: 5px solid salmon;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 42%;
+  margin-top: -30px;
+  background-color: white;
+  border-radius: 30px;
+  z-index: 1;
+  text-align: center;
+  line-height: 60px;
+  color: #f89bb4;
+  font-size: 26px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  padding-top: 80px;
+  padding-left: 25px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.gajah,
+.orang,
+.semut {
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+}
+
+.gajah:hover,
+.semut:hover,
+.orang:hover,
+.active {
+  box-shadow: 0 0 10px 5px limegreen;
+}
+
+.gajah:active,
+.semut:active,
+.orang:active {
+  top: 2px;
+}
+.score {
+  display: flex;
+  gap: 3rem;
+  font-size: 25px;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .container {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .area-game {
+    width: 100%;
+    gap: 4rem;
+    height: 180px;
+    display: flex;
+    border-radius: 0.5rem;
+  }
+  .area-player {
+    width: 100%;
+    height: 160px;
+    display: block;
+    border-radius: 0.5rem;
+  }
+  .area-player img {
+    margin-top: 1rem;
+    width: 80px;
+    height: 80px;
+  }
+  .info {
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: -8%;
+    line-height: 25px;
+    left: 28%;
+    margin: auto;
+    top: 175px; /* Menggeser info agar lebih ke atas */
+  }
+  ul {
+    padding-top: 30px; /* Mengurangi padding atas pada ul */
+    padding-left: 10px; /* Mengurangi padding kiri pada ul */
+  }
+  li {
+    margin: 0 10px; /* Mengurangi margin antara li */
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .score {
+    font-size: 13px;
+  }
+}
