@@ -185,7 +185,6 @@ img {
   }
   .area-player img {
     margin-top: 1rem;
-    margin-left: 0.4rem;
     width: 80px;
     height: 80px;
   }
@@ -197,14 +196,14 @@ img {
     line-height: 25px;
     left: 28%;
     margin: auto;
-    top: 175px; /* Menggeser info agar lebih ke atas */
+    top: 175px; 
   }
   ul {
-    padding-top: 30px; /* Mengurangi padding atas pada ul */
-    padding-left: 10px; /* Mengurangi padding kiri pada ul */
+    padding-top: 30px; 
+    padding-left: 10px; 
   }
   li {
-    margin: 0 10px; /* Mengurangi margin antara li */
+    margin: 0 10px; 
   }
   img {
     width: 100px;
