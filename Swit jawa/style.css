@@ -185,6 +185,7 @@ img {
   }
   .area-player img {
     margin-top: 1rem;
+    margin-left: 0.4rem;
     width: 80px;
     height: 80px;
   }
